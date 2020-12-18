@@ -4,16 +4,12 @@ const assets = [
     "/index.html",
     "/css/styles.css",
     "/js/index.js",
-    "/images/Blogo 1-152.png",
-    "/images/Blogo 1-192.png",
-    "/images/Blogo 1-384.png",
-    "/images/Blogo 1128.png",
-    "/images/Blogo-72.png",
-    "/images/Blogo-92.png",
-    "/images/Blogo-144.png",
-    "/images/Blogo-512.png",
-    "/images/Blogo.png",
-    "/images/city.jpg",
+    "/images/newlogo 1-124.png",
+    "/images/newlogo 1-144.png",
+    "/images/newlogo 1-152.png",
+    "/images/newlogo 1-512.png",
+    "/images/newlogo 72.png",
+    "/images/newlogo 96.png",
 ]
 
 self.addEventListener("install", installEvent => {

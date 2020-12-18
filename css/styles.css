@@ -43,7 +43,7 @@ Card styling
 .card {
     background-color: #fffaf7;
 
-    width: 40vw;
+    width: 45vw;
     /* width: 60%; */
     /* min-height: 90vh; */
 
@@ -238,8 +238,7 @@ Menu Icon
 }
 @media screen and (max-width: 900px) {
     .card {
-    width: 90vw;
-    /* width: 100%; */
+    width: 95vw;
     }
     .top {
         display: flex;
@@ -260,9 +259,9 @@ Menu Icon
     justify-content: space-between;
     flex-direction: column;
 }
-.card {
+/* .card {
     width: 65vw;
-}
+} */
 }
 /* @media screen and (max-width: 1100px) {
 
