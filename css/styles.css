@@ -187,9 +187,10 @@ Input styling
     background-color: rgba(188, 103, 44, 0.5);
     float: right;
     cursor: pointer;
+    outline: none;
 }
 .submit:hover {
-    background-color: rgba(188, 103, 44, 0.8);
+    background-color: rgba(235, 103, 10, 0.8);
 }
 .submit:focus {
     outline: rgba(0, 36, 71, 0.8);

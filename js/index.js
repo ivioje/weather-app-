@@ -42,6 +42,17 @@ function getWeatherInfo () {
     })
     .then(searchResults);
 }
+function submitResults() {
+  let location = document.getElementById('locationOutput').value
+// console.log(`${location}`)
+fetch(`${Api.endpoint}weather?q=${location}&units=metric&APPID=${Api.key}`)
+  .then(weather => {
+    console.log(weather.json)
+    return weather.json()
+  })
+  .then(searchResults)
+
+}
 
 function searchResults (weather) {
   // console.log(weather);
@@ -159,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
   listenForMenuIcon();
 
 });
+/*------------------------------------------------------------------------------*/
 
 if('serviceWorker' in navigator) {
 window.addEventListener("load", function() {
