@@ -152,6 +152,11 @@ function listenForMenuIcon () {
   };
 }
 
+/*---------------------------------------------------------------------------*/
+function reset() {
+  window.location.reload()
+}
+
 /*-----------------------------------------------------------------------------*/
 
 document.addEventListener('DOMContentLoaded', () => {

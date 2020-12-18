@@ -126,6 +126,7 @@ float: right;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 #quote {
     font-family: "Marko One", Georgia, serif;
@@ -252,19 +253,20 @@ Menu Icon
     }
   
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1200px) {
 .new-inputs {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 }
-}
-@media screen and (min-width: 1100px) {
 .card {
-    width: 50vw;
+    width: 65vw;
 }
 }
+/* @media screen and (max-width: 1100px) {
+
+} */
 
 /*dropdown content (Hidden by Default) */
 .menu-icon-options {

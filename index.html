@@ -27,7 +27,8 @@
             <div id="menu-icon-options-id" class="menu-icon-options">
               <a href="#">History</a>
               <a href="#">Alerts</a>
-              <a href="#">Reset</a>
+              <!-- <button onclick="reset()">Reload</button> -->
+              <a href="" onclick="reset()">Reset</a>
             </div>
 
             <div class="top">
@@ -44,10 +45,10 @@
               <div id="location">Location,<br />code</div>
             </div>
           </div>
-          
+
           <span id="date"></span>
           <span id="time"></span>
-          
+
           <div class="grp">
             <span id="temp"> °C</span>
             <div class="weather-svg"></div>
@@ -57,19 +58,19 @@
           <div class="new-inputs">
             <div>
               <label>Change Date:</label>
-              
-            <input type="date" id="dateInput" />
+
+              <input type="date" id="dateInput" />
             </div>
             <div id="find">
-            <label>Change Location:</label>
+              <label>Change Location:</label>
               <input
-                  type="text"
-                  id="locationOutput"
-                  placeholder="eg. Nairobi"
-                />
+                type="text"
+                id="locationOutput"
+                placeholder="eg. Nairobi"
+              />
             </div>
             <div>
-              <button class="search" onclick="submitResults()">Submit</button>
+              <button class="submit" onclick="submitResults()">Submit</button>
             </div>
           </div>
 
