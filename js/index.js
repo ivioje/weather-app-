@@ -185,3 +185,35 @@ window.addEventListener("load", function() {
   .catch(err => console.log("service worker not registered", err))
 })
 }
+/*-----------------------------*/
+// let history = JSON.parse(localStorage.getItem('history')) || [];
+// let historyList = document.querySelector('.history ul');
+// let searchBtn = document.querySelector('.search');
+
+// searchBtn.addEventListener('click', showHistory);
+
+// function showHistory() {
+//   let recentHistory = document.getElementById('locationInput').value;
+
+//   if(recentHistory) {
+//     let hsitoryObj = {
+//       id: new Date().getTime(),
+//       history: recentHistory
+//     }
+//     history.push(hsitoryObj);
+//     localStorage.setItem('history', JSON.stringify(history));
+//   }
+// }
+
+// function populateHistoryList(arr, ul) {
+//   if(arr) {
+//     for (let i in arr) {
+//       let li = document.createElement('li');
+//       li.setAttribute("id", `${arr[i].id}`);
+//       li.innerHTML = (`
+//       <p>${arr[i].search}</p>
+//       `);
+//       ul.append(li);
+//     }
+//   }
+// }

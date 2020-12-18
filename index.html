@@ -16,6 +16,7 @@
     <div class="wrapper">
       <div class="page-header"></div>
       <div class="page-main">
+        <h1>Cool Weather App</h1>
         <div class="card">
           <div id="location-bg">
             <div class="menu-icon">
@@ -25,9 +26,6 @@
             </div>
 
             <div id="menu-icon-options-id" class="menu-icon-options">
-              <a href="#">History</a>
-              <a href="#">Alerts</a>
-              <!-- <button onclick="reset()">Reload</button> -->
               <a href="" onclick="reset()">Reset</a>
             </div>
 
@@ -38,7 +36,7 @@
                   id="locationInput"
                   placeholder="Search for a city..."
                 />
-                <button class="search" onclick="getWeatherInfo()">
+                <button class="search" onclick="getWeatherInfo()" name="search">
                   Search
                 </button>
               </div>
@@ -79,6 +77,13 @@
             weather!!!</span
           >
         </div>
+      </div>
+
+      <div class="history">
+        <ul>
+         
+          <!-- hsitory items -->
+        </ul>
       </div>
       <div class="page-footer"></div>
     </div>
