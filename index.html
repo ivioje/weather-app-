@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#7fa9d7" />
+    <link rel="apple-touch-icon" href="/images/Blogo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <!-- <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkB0CZD-2Kj0GMpzsYGZMVA1ygS9oiMsA&libraries=places&callback=initMap">
+</script> -->
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="page-header"></div>
+      <div class="page-main">
+        <div class="card">
+          <div id="location-bg">
+            <div class="menu-icon">
+              <div class="menu-icon-bars"></div>
+              <div class="menu-icon-bars"></div>
+              <div class="menu-icon-bars"></div>
+            </div>
+
+            <div id="menu-icon-options-id" class="menu-icon-options">
+              <a href="#">History</a>
+              <a href="#">Alerts</a>
+              <a href="#">Reset</a>
+            </div>
+
+            <div class="top">
+              <div id="grp1">
+                <input
+                  type="text"
+                  id="locationInput"
+                  placeholder="Search for a city..."
+                />
+                <button class="search" onclick="getWeatherInfo()">
+                  Search
+                </button>
+              </div>
+              <div id="location">Location,<br />code</div>
+            </div>
+          </div>
+          
+          <span id="date"></span>
+          <span id="time"></span>
+          
+          <div class="grp">
+            <span id="temp"> °C</span>
+            <div class="weather-svg"></div>
+          </div>
+          <span id="weather" class="weather-sum"></span>
+
+          <div class="new-inputs">
+            <div>
+              <label>Change Date:</label>
+              
+            <input type="date" id="dateInput" />
+            </div>
+            <div id="find">
+            <label>Change Location:</label>
+              <input
+                  type="text"
+                  id="locationInput"
+                  placeholder="eg. Nairobi"
+                />
+            </div>
+            <div>
+              <button class="submit" onclick="getWeatherInfo()">Submit</button>
+            </div>
+          </div>
+
+          <span id="quote"
+            >No such thing as bad weather, only different kinds of good
+            weather!!!</span
+          >
+        </div>
+      </div>
+      <div class="page-footer"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

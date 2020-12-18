@@ -1,0 +1,298 @@
+/*Basic styling*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	/*formatting text*/
+	font-size: 100%;
+    color: #000000;
+
+    line-height: 2;
+    /* background-image: url(../images/citybg.jpeg);
+    background-size: cover;
+    backdrop-filter: blur(5px); */
+    background-color:  rgba(121, 197, 231, 0.4);
+   
+}
+/*
+===============================================================================
+Wrapper styling
+*/
+.wrapper {
+    min-height: 100vh;
+}
+.wrapper >* {
+    padding: 8px;
+}
+/*
+===============================================================================
+Main styling
+*/
+.page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /*vertically justified content*/
+    align-items: center;    /*horizontally justified center*/
+}
+/*
+===============================================================================
+Card styling
+*/
+.card {
+    background-color: #fffaf7;
+
+    width: 40vw;
+    /* width: 60%; */
+    /* min-height: 90vh; */
+
+    /*add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+/*on mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card >* {
+    padding: 10px 20px;
+}
+.card span {
+    display: block;
+}
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top input {
+    height: 50px;
+}
+.top input:hover{
+    background-color: none;
+}
+.find {
+    margin-left: 10px;
+}
+/*card sections*/
+#location-bg {
+    height: 250px;
+    background: linear-gradient(
+      rgba(255, 250, 247, 0.5),
+      rgba(255, 250, 247, 0.5)
+    ), url(../images/city.jpg) no-repeat center/cover;
+    background-blend-mode: darken;
+
+    border-radius: 15px 15px 0 0;
+    border-bottom: rgba(242, 220, 197, 0.3) solid 1px;
+}
+#location {
+    height: 150px;
+    display: flex; 
+    flex-direction: column-reverse;
+float: right;
+    font-family: "Lovelyn", "Marko One", Georgia, serif;
+    font-weight: bold;
+    font-size: 1.8em;
+	letter-spacing: 4px; 
+    color: #fffaf7;
+    text-align: right;    
+}
+#date, #time, #temp, #weather {
+    font-family: 'Courier New', Courier, monospace;
+}
+#date, #time {
+    display:inline;
+}
+#time {
+    padding: 0 20px 0 0;
+    float: right;
+}
+#temp {
+    font-size: 2em;
+    font-weight: bold;
+    color: #002447;
+}
+#weather {
+    font-family: monospace;
+    color: rgba(0, 36, 71, 1);
+}
+.grp {
+    display: flex;
+}
+.grp1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#quote {
+    font-family: "Marko One", Georgia, serif;
+    font-style: italic;
+    color: #002447;
+    font-size: 0.65em;
+    text-align: right;
+
+    background-color: rgba(188, 103, 44, 0.1);
+    border-radius: 0 0 15px 15px;
+
+    margin-top: 20px;
+}
+/*
+===============================================================================
+Input styling
+*/
+.new-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: rgba(188, 103, 44, 0.15) solid 1px;
+}
+ @media screen and (max-width: 1000px) {
+	.new-inputs div{
+        margin-left: 10px;
+    } 
+} 
+/* @media screen and (max-width: 700px){
+      .card {
+        width: 75%;
+    }
+} */
+.card label {
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+}
+.card [type="text"], [type="date"] {
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: rgba(188, 103, 44, 0.5) solid 1px;
+
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.card [type="text"]:hover {
+    background-color:  none;
+}
+.card [type="text"]:focus {
+    /* background-color:  rgba(19, 9, 2, 0.1); */
+    outline: none;
+}
+.submit,.search {
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    padding: 18px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(188, 103, 44, 0.5);
+    float: right;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: rgba(188, 103, 44, 0.8);
+}
+.submit:focus {
+    outline: rgba(0, 36, 71, 0.8);
+}
+.submit {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+/*
+===============================================================================
+Date picker
+*/
+[type="date"] {
+    background: url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+/*
+===============================================================================
+Menu Icon
+*/
+.menu-icon {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.menu-icon-bars {
+    width: 28px;
+    height: 2px;
+    background-color: rgba(0, 36, 71, 0.8);
+    margin: 6px 0;
+}
+@media screen and (min-width: 550px) {
+    .menu-icon-bars {
+        width: 35px;
+        height: 3px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .card {
+    width: 90vw;
+    /* width: 100%; */
+    }
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #location {
+        font-size: 1.2em;
+        height: 100px;
+    }
+  
+}
+@media screen and (max-width: 780px) {
+.new-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+}
+@media screen and (min-width: 1100px) {
+.card {
+    width: 50vw;
+}
+}
+
+/*dropdown content (Hidden by Default) */
+.menu-icon-options {
+    display: none;
+    position: absolute;
+    background-color: #fffaf7;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index: 1;
+}
+/*links inside the dropdown */
+.menu-icon-options a {
+    color: #002447;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+.menu-icon-options a:not(firstchild) {
+    border-top: rgba(188, 103, 44, 0.1) solid 1px;
+}
+.menu-icon-options a:hover {
+    color: #bc672c;
+}
+/*show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block}
+
+/*
+===============================================================================
+CREDITS
+
+*/
